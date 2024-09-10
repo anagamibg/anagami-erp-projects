@@ -1,0 +1,94 @@
+// ============================================================================
+// Anagami ERP Redesign — Project & Task Pages (Aggressive Override)
+// ============================================================================
+
+// Project header menu
+.project-header .project-menu {
+  .p-sub-menu {
+    span {
+      padding: 8px 14px !important;
+      font-size: $r-text-sm !important;
+      border-radius: $r-border-radius-sm !important;
+    }
+
+    // Override theme_css: project-menu active:after background
+    &.active:after,
+    &::after {
+      background: $r-primary !important;
+      border-color: $r-primary !important;
+    }
+  }
+}
+
+.project-menu.in {
+  background-color: $r-card-bg !important;
+  border: 1px solid $r-border-color !important;
+  border-radius: $r-border-radius !important;
+}
+
+// Project right panel
+.project-right .p-activity-heading span {
+  background-color: $r-body-bg !important;
+  border-radius: $r-border-radius-pill !important;
+  font-size: $r-text-xs !important;
+  padding: 4px 10px !important;
+}
+
+// Task board
+.w-task-board-panel {
+  background-color: $r-body-bg !important;
+  border-radius: $r-border-radius !important;
+
+  .board-panel {
+    background-color: $r-body-bg !important;
+  }
+
+  .minimized {
+    background-color: $r-body-bg !important;
+    border: 1px solid $r-border-color !important;
+    border-radius: $r-border-radius !important;
+  }
+}
+
+.w-task-board-box {
+  background-color: $r-card-bg !important;
+  border: 1px solid $r-border-color !important;
+  border-radius: $r-border-radius !important;
+  box-shadow: $r-shadow-xs !important;
+  margin-bottom: $r-space-3 !important;
+
+  &:hover {
+    box-shadow: $r-shadow-sm !important;
+  }
+
+  &:after {
+    background-color: $r-primary !important;
+  }
+}
+
+.b-p-header .b-p-badge {
+  background-color: $r-card-bg !important;
+  border: 1px solid $r-border-color !important;
+  border-radius: $r-border-radius-pill !important;
+}
+
+// Task search
+.task-search .input-group-text {
+  background-color: $r-body-bg !important;
+  border-color: $r-border-color !important;
+}
+
+// Task detail panel
+.task-detail-panel {
+  border: none !important;
+  box-shadow: $r-shadow-xl !important;
+}
+
+// Close task detail button — override theme_css
+.close-task-detail {
+  background-color: $r-primary !important;
+
+  span {
+    border-color: $r-primary !important;
+  }
+}
